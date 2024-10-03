@@ -2,6 +2,8 @@
 
   <h1>Car Show Page</h1>
 
+  <%= link_to 'Home', cars_path %> | <%= link_to 'My Favs', favourites_path %>
+
   <div class="card car-card">
     <% if @car.favourite.nil? %>
       <%= simple_form_for [@car, @fav] do |f| %><%= f.button :submit, "+ Fav", class: 'btn btn-primary ms-auto' %><% end %>
