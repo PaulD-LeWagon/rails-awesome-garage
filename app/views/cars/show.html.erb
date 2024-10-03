@@ -25,7 +25,7 @@
       </div>
       <% end %>
       <div class="add-review">
-        <h4>What do you think!?</h4>
+        <h4>But, what do <em>you</em> think!?</h4>
 
         <%= simple_form_for [@car, @review], html: { class: 'form-new m-2 p-3'} do |f| %>
           <%= f.input :comment, required: true, label_html: { class: 'form-label mb-3' }, input_html: { class: 'form-control mb-3'} %>

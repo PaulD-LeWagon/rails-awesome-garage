@@ -69,6 +69,12 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-gem 'faker'
-gem 'simple_form'
-gem 'pgreset'
+
+gem "faker"
+gem "pgreset" # VERY IMPORTANT IF USING postgresql DB
+
+gem "bootstrap", "~> 5.2"
+gem "autoprefixer-rails"
+gem "font-awesome-sass", "~> 6.1"
+gem "simple_form"
+gem "sassc-rails" # Uncomment this line

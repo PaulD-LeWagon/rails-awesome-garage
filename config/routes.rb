@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  root to: "cars#index"
+  root to: "pages#index"
   resources :cars, only: [:index, :show] do
     resources :reviews, only: [:create]
     resources :favourites, only: [:create]
