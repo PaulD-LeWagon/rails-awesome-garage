@@ -1,0 +1,9 @@
+<div class="container">
+
+  <h1>Cars Index Page</h1>
+
+  <% @cars.each do |car| %>
+  <p><%= link_to "#{car.brand} #{car.model}", car_path(car) %></p>
+  <% end %>
+
+</div>

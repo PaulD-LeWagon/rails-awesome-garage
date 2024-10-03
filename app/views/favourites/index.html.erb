@@ -1,0 +1,9 @@
+<h1>Favourites Index</h1>
+
+<ul>
+  <% @favourites.each do |fav| %>
+    <% if !fav.car.nil? %>
+    <li><%= fav.car.brand %> <%= fav.car.model %> | <%= link_to "Remove", favourite_path(fav), data: { turbo_method: :delete } %></li>
+    <% end %>
+  <% end %>
+</ul>
